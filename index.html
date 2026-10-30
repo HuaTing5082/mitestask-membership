@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>野蟎任務訂閱制會員｜居家清潔 95 折與會員優惠</title>
+<meta name="description" content="野蟎任務訂閱制會員：NT$800／6 個月，一般居家清潔、除蟎清潔、高溫清潔享 95 折，累積消費每滿 NT$8,000 送 NT$500 折價券，六個月內滿 15 小時下一期免費續約。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="野蟎任務｜訂閱制會員">
+<meta property="og:description" content="指定清潔服務享 95 折，滿額送折價券，六個月滿 15 小時下一期免費續約。">
+<meta property="og:url" content="https://member.mitestask.com.tw/">
+<meta property="og:image" content="https://member.mitestask.com.tw/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#32925C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand:#32925C; --brand-dark:#22693F; --brand-soft:#E4F3EA; --mint:#CFEBDA;
+    --sun:#FFD45C; --sun-soft:#FFF4CF; --peach:#FFE3D3; --sky:#DDF0F7;
+    --bg:#FFFFFF; --bg-2:#F4FAF6; --text:#2F3B33; --muted:#6F7C73; --line:#DCEBE1;
+    --line-green:#06C755; --radius:24px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Huninn","jf-openhuninn","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+       color:var(--text);background:var(--bg);line-height:1.8;font-size:16px;padding-bottom:88px;letter-spacing:.02em;overflow-x:hidden}
+  @media(min-width:860px){body{padding-bottom:0}}
+  b,strong{font-weight:normal;color:var(--brand-dark)}
+  a{color:var(--brand)}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 16px;position:relative}
+  section{padding:72px 0;position:relative}
+  .center{text-align:center}
+
+  /* section heading */
+  .pill{display:inline-flex;align-items:center;gap:6px;background:var(--brand-soft);color:var(--brand-dark);
+        border-radius:999px;padding:4px 14px;font-size:14px;margin-bottom:12px}
+  h2{font-size:clamp(26px,5vw,36px);font-weight:normal;line-height:1.4;margin-bottom:10px}
+  h2 .hl{background:linear-gradient(transparent 60%,var(--sun) 60%);padding:0 4px}
+  .lead{color:var(--muted);margin-bottom:36px}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:inherit;font-size:17px;
+       border-radius:999px;padding:14px 30px;text-decoration:none;border:2px solid transparent;cursor:pointer;
+       transition:transform .15s,box-shadow .15s,background .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn:active{transform:translateY(0)}
+  .btn-line{background:var(--line-green);color:#fff;box-shadow:0 6px 0 #04A346}
+  .btn-line:hover{box-shadow:0 8px 0 #04A346}
+  .btn-line:active{box-shadow:0 3px 0 #04A346}
+  .btn-sun{background:var(--sun);color:#4A3B00;box-shadow:0 6px 0 #E0B53A}
+  .btn-ghost{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.7)}
+  .btn-ghost:hover{background:rgba(255,255,255,.24)}
+  .btn-sm{padding:8px 18px;font-size:15px;box-shadow:0 4px 0 #04A346}
+  .ico{width:22px;height:22px;flex:none}
+
+  /* header */
+  header{position:sticky;top:0;z-index:20;background:var(--brand);transition:box-shadow .2s}
+  header.scrolled{box-shadow:0 6px 20px rgba(0,0,0,.12)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand img{height:26px;width:auto}
+  @media(max-width:400px){.brand img{height:21px} header .btn-sm{padding:7px 14px;font-size:14px}}
+  @media(min-width:600px){.brand img{height:30px}}
+
+  /* hero */
+  .hero{background:var(--brand);color:#fff;padding:40px 0 120px;overflow:hidden}
+  .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.07)}
+  .hero::before{width:520px;height:520px;right:-160px;top:-180px}
+  .hero::after{width:300px;height:300px;left:-120px;bottom:20px}
+  .bubble{position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,.35);animation:rise 9s ease-in infinite;opacity:0}
+  .bubble.b1{width:22px;height:22px;left:8%;bottom:10%;animation-delay:0s}
+  .bubble.b2{width:14px;height:14px;left:40%;bottom:5%;animation-delay:2.5s}
+  .bubble.b3{width:30px;height:30px;left:62%;bottom:12%;animation-delay:5s}
+  .bubble.b4{width:12px;height:12px;left:85%;bottom:20%;animation-delay:1.2s}
+  .bubble.b5{width:18px;height:18px;left:25%;bottom:25%;animation-delay:6.5s}
+  @keyframes rise{0%{transform:translateY(0) scale(.8);opacity:0}15%{opacity:1}100%{transform:translateY(-420px) scale(1.1);opacity:0}}
+
+  .hero-grid{display:grid;gap:36px;align-items:center;position:relative;z-index:1}
+  @media(min-width:860px){.hero-grid{grid-template-columns:1.2fr 1fr}}
+  .hero .hi{display:inline-block;background:var(--sun);color:#4A3B00;border-radius:999px;padding:4px 16px;font-size:15px;margin-bottom:16px;transform:rotate(-2deg)}
+  .hero h1{font-size:clamp(34px,7.5vw,56px);font-weight:normal;line-height:1.3;margin-bottom:18px}
+  .hero h1 .y{color:var(--sun)}
+  .hero p.sub{font-size:17px;opacity:.95;margin-bottom:30px;max-width:30em}
+  .hero .actions{display:flex;flex-wrap:wrap;gap:14px}
+
+  .hero-visual{position:relative;display:flex;justify-content:center}
+  .mascot{width:min(270px,62vw);background:#fff;border-radius:50%;padding:20px;animation:float 4s ease-in-out infinite;filter:drop-shadow(0 18px 24px rgba(0,0,0,.18))}
+  @keyframes float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-14px) rotate(3deg)}}
+  .sticker{position:absolute;background:#fff;color:var(--text);border-radius:20px;padding:10px 16px;
+           box-shadow:0 10px 24px rgba(0,0,0,.15);text-align:center;line-height:1.3}
+  .sticker .n{font-size:30px;color:var(--brand)}
+  .sticker small{display:block;font-size:13px;color:var(--muted)}
+  .s1{left:0;top:6%;transform:rotate(-8deg)}
+  .s2{right:0;top:38%;transform:rotate(6deg)}
+  .s3{left:6%;bottom:0;transform:rotate(4deg);background:var(--sun)}
+  .s3 .n{color:#4A3B00}
+  .s3 small{color:#6B5A10}
+  @media(min-width:860px){.s1{left:4%}.s2{right:2%}}
+
+  .wave{position:absolute;left:0;right:0;bottom:-1px;line-height:0}
+  .wave svg{width:100%;height:70px;display:block}
+
+  /* price strip */
+  .price-strip{margin-top:-70px;position:relative;z-index:2;padding:0}
+  .price-card{background:#fff;border-radius:28px;padding:24px;box-shadow:0 16px 40px rgba(34,105,63,.16);
+              display:grid;gap:16px;align-items:center}
+  @media(min-width:760px){.price-card{grid-template-columns:auto 1fr;gap:32px;padding:28px 36px}}
+  .price{font-size:52px;line-height:1;color:var(--text)}
+  .price small{font-size:18px;color:var(--muted)}
+  .price-tag{font-size:14px;color:var(--brand);margin-bottom:6px}
+  .perks{display:flex;flex-wrap:wrap;gap:10px}
+  .perk{background:var(--bg-2);border-radius:999px;padding:8px 16px;font-size:15px;display:inline-flex;gap:6px;align-items:center}
+  .perk i{font-style:normal;color:var(--brand)}
+
+  /* benefits */
+  .cards{display:grid;gap:20px}
+  @media(min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
+  .card{border-radius:var(--radius);padding:30px 26px;position:relative;overflow:hidden;transition:transform .2s}
+  .card:hover{transform:translateY(-6px) rotate(-.5deg)}
+  .card.c1{background:var(--brand-soft)}
+  .card.c2{background:var(--sun-soft)}
+  .card.c3{background:var(--sky)}
+  .card .em{width:60px;height:60px;border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:16px;box-shadow:0 6px 14px rgba(0,0,0,.06)}
+  .card .em svg{width:32px;height:32px}
+  .card .big{font-size:44px;line-height:1.1;color:var(--brand-dark)}
+  .card .big small{font-size:18px}
+  .card h3{font-size:20px;font-weight:normal;margin:6px 0 8px}
+  .card p{color:#4F5B53;font-size:15px}
+  .card::after{content:"";position:absolute;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.45);right:-50px;bottom:-60px}
+
+  /* services */
+  .alt{background:var(--bg-2)}
+  .svc{display:grid;gap:20px}
+  @media(min-width:760px){.svc{grid-template-columns:3fr 2fr}}
+  .svc-box{border-radius:var(--radius);padding:26px;background:#fff}
+  .svc-box h3{font-size:18px;font-weight:normal;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+  .svc-box h3 .dot{width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:15px}
+  .svc-yes h3 .dot{background:var(--brand)}
+  .svc-no h3 .dot{background:#B9B9B9}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{border-radius:16px;padding:12px 18px;font-size:17px;display:inline-flex;align-items:center;gap:8px}
+  .svc-yes .chip{background:var(--brand-soft);color:var(--brand-dark)}
+  .svc-no .chip{background:#F2F2F2;color:#8A8A8A}
+  .svc-no .chip s{text-decoration-thickness:1.5px}
+  .tip{display:flex;gap:10px;align-items:flex-start;background:var(--sun-soft);border-radius:18px;padding:14px 18px;font-size:15px;margin-top:20px}
+  .tip .t{flex:none;background:var(--sun);color:#4A3B00;border-radius:999px;padding:0 10px;font-size:13px;line-height:24px;margin-top:2px}
+
+  /* rules */
+  .rules{display:grid;gap:18px}
+  @media(min-width:760px){.rules{grid-template-columns:1fr 1fr}}
+  .rule{background:#fff;border:2px solid var(--line);border-radius:var(--radius);padding:24px 24px 20px;position:relative}
+  .rule h3{font-size:19px;font-weight:normal;margin-bottom:10px;display:flex;align-items:center;gap:12px}
+  .rule h3 .num{width:36px;height:36px;border-radius:12px;background:var(--brand);color:#fff;font-size:18px;display:inline-flex;align-items:center;justify-content:center;transform:rotate(-6deg)}
+  .rule:nth-child(2) h3 .num{background:#E9A23B;transform:rotate(5deg)}
+  .rule:nth-child(3) h3 .num{background:#4BA3C3;transform:rotate(-4deg)}
+  .rule:nth-child(4) h3 .num{background:#E07B67;transform:rotate(6deg)}
+  .rule ul{list-style:none}
+  .rule li{margin:8px 0;font-size:15px;padding-left:22px;position:relative}
+  .rule li::before{content:"";position:absolute;left:4px;top:.75em;width:8px;height:8px;border-radius:50%;background:var(--mint)}
+
+  /* renewal */
+  .renew{background:var(--brand);color:#fff;overflow:hidden}
+  .renew::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.06);left:-150px;top:-150px}
+  .renew-grid{display:grid;gap:32px;align-items:center;position:relative}
+  @media(min-width:860px){.renew-grid{grid-template-columns:1fr 1.1fr}}
+  .renew .pill{background:rgba(255,255,255,.16);color:#fff}
+  .renew h2{color:#fff}
+  .renew h2 .y{color:var(--sun)}
+  .renew p{opacity:.92}
+  .track{background:#fff;color:var(--text);border-radius:28px;padding:26px}
+  .track h3{font-size:18px;font-weight:normal;margin-bottom:4px}
+  .track .cap{color:var(--muted);font-size:14px;margin-bottom:18px}
+  .bar{height:22px;background:var(--bg-2);border-radius:999px;position:relative;overflow:hidden;margin-bottom:10px}
+  .bar .fill{position:absolute;inset:0 auto 0 0;width:0;background:linear-gradient(90deg,var(--brand),#4CC37E);border-radius:999px;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+  .bar .goal{position:absolute;top:-4px;bottom:-4px;left:83.3%;width:3px;background:var(--sun);border-radius:2px}
+  .bar-labels{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:18px}
+  .visits{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .visit{background:var(--bg-2);border-radius:18px;padding:12px 8px;text-align:center;opacity:.35;transform:scale(.95);transition:all .4s}
+  .visit.on{opacity:1;transform:scale(1)}
+  .visit .h{font-size:22px;color:var(--brand-dark)}
+  .visit small{display:block;font-size:12px;color:var(--muted)}
+  .visit.goal-hit{background:var(--sun-soft)}
+  .done{margin-top:16px;text-align:center;font-size:17px;color:var(--brand-dark);opacity:0;transform:translateY(6px);transition:all .4s}
+  .done.on{opacity:1;transform:none}
+
+  /* calculator */
+  .plans{display:grid;gap:18px}
+  @media(min-width:760px){.plans{grid-template-columns:repeat(3,1fr)}}
+  .plan{background:#fff;border:2px solid var(--line);border-radius:28px;padding:24px 22px 20px;display:flex;flex-direction:column;gap:6px;position:relative}
+  .plan.hot{border-color:var(--brand);box-shadow:0 14px 34px rgba(34,105,63,.14)}
+  .plan .badge{position:absolute;top:-13px;right:20px;background:var(--sun);color:#4A3B00;border-radius:999px;padding:2px 12px;font-size:13px}
+  .plan h3{font-size:20px;font-weight:normal;display:flex;align-items:center;gap:8px}
+  .plan h3 .fq{background:var(--brand-soft);color:var(--brand-dark);border-radius:999px;padding:1px 10px;font-size:14px}
+  .plan .meta{color:var(--muted);font-size:13px}
+  .plan .rate{display:flex;align-items:baseline;gap:6px;margin-top:10px;flex-wrap:wrap}
+  .plan .rate .now{font-size:46px;line-height:1;color:var(--brand-dark);font-variant-numeric:tabular-nums}
+  .plan .rate .unit{font-size:15px;color:var(--muted)}
+  .plan .was{font-size:14px;color:var(--muted)}
+  .plan .was s{text-decoration-thickness:1.5px}
+  .plan .save{align-self:flex-start;background:var(--sun-soft);color:#7A5A00;border-radius:999px;padding:3px 12px;font-size:14px;margin-top:4px}
+  .plan .next{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:14px;color:var(--text);display:flex;justify-content:space-between;gap:8px}
+  .plan .next b{font-size:18px}
+  .diy{margin-top:24px;background:var(--bg-2);border-radius:28px;padding:24px;display:grid;gap:20px;align-items:center}
+  @media(min-width:860px){.diy{grid-template-columns:1.1fr 1fr}}
+  .diy h3{font-size:18px;font-weight:normal;margin-bottom:12px}
+  .opts{display:grid;gap:12px}
+  .opt{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .opt>span{width:3em;color:var(--muted);font-size:14px;flex:none}
+  .seg{display:flex;flex-wrap:wrap;gap:6px}
+  .seg button{border:2px solid var(--line);background:#fff;border-radius:999px;padding:5px 14px;font:inherit;font-size:15px;cursor:pointer;color:var(--text);transition:all .15s}
+  .seg button:hover{border-color:var(--brand)}
+  .seg button.on{border-color:var(--brand);background:var(--brand);color:#fff}
+  .seg button:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+  .diy .plan{border-color:var(--brand)}
+  .calc-fine{color:var(--muted);font-size:13px;margin-top:18px;line-height:1.7}
+
+  /* who */
+  .who{display:grid;gap:20px}
+  @media(min-width:760px){.who{grid-template-columns:1fr 1fr}}
+  .who-box{border-radius:var(--radius);padding:28px}
+  .who-yes{background:var(--brand-soft)}
+  .who-no{background:#F6F4EF}
+  .who-box h3{font-size:20px;font-weight:normal;margin-bottom:12px}
+  .who-box ul{list-style:none}
+  .who-box li{margin:10px 0;padding-left:30px;position:relative;font-size:16px}
+  .who-yes li::before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:var(--brand);color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center}
+  .who-no li::before{content:"–";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:#C9C4B8;color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center}
+  .who-no p{color:var(--muted);font-size:14px;margin-top:10px}
+
+  /* faq */
+  .faq{max-width:800px;margin:0 auto}
+  .faq details{background:#fff;border:2px solid var(--line);border-radius:20px;margin-bottom:12px;overflow:hidden;transition:border-color .2s}
+  .faq details[open]{border-color:var(--brand)}
+  .faq summary{list-style:none;cursor:pointer;padding:18px 56px 18px 56px;position:relative;font-size:17px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::before{content:"Q";position:absolute;left:18px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center}
+  .faq summary::after{content:"";position:absolute;right:22px;top:50%;width:10px;height:10px;border-right:2px solid var(--brand);border-bottom:2px solid var(--brand);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+  .faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+  .faq .a{padding:0 22px 20px 56px;color:#4F5B53;font-size:15px}
+
+  /* cta */
+  .cta{background:var(--sun-soft);text-align:center;overflow:hidden}
+  .cta .mascot-sm{width:96px;background:#fff;border-radius:50%;padding:8px;box-shadow:0 8px 18px rgba(34,105,63,.15);margin:0 auto 14px;animation:float 4s ease-in-out infinite}
+  .cta p{color:var(--muted);margin-bottom:28px}
+  .cta .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+  .cta .btn-out{background:#fff;color:var(--brand-dark);border-color:var(--brand);box-shadow:0 6px 0 var(--mint)}
+
+  footer{background:var(--brand-dark);color:rgba(255,255,255,.75);font-size:13px;padding:30px 0;text-align:center}
+  footer img{height:22px;margin:0 auto 10px;opacity:.9}
+
+  /* sticky mobile bar */
+  .sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:30;background:#fff;border-radius:22px;
+          box-shadow:0 10px 30px rgba(0,0,0,.18);padding:10px 10px 10px 18px;display:flex;gap:10px;align-items:center;
+          transform:translateY(130%);transition:transform .3s}
+  .sticky.show{transform:none}
+  .sticky .info{flex:1;font-size:12px;line-height:1.45;color:var(--muted)}
+  .sticky .info b{font-size:16px;color:var(--text)}
+  .sticky .btn{padding:11px 20px;font-size:16px;box-shadow:0 4px 0 #04A346}
+  @media(min-width:860px){.sticky{display:none}}
+
+  /* reveal */
+  .reveal{transform:translateY(18px);transition:transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .reveal{transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap">
+    <a class="brand" href="https://mitestask.com.tw/" aria-label="野蟎任務 MitesTask 首頁"><img src="logo-white.png" alt="MitesTask 野蟎任務"></a>
+    <a class="btn btn-line btn-sm js-line" data-msg="ask" data-event="line_click" href="https://line.me/R/ti/p/@yamen">LINE 問問看</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span><span class="bubble b4"></span><span class="bubble b5"></span>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="hi">野蟎任務 訂閱制會員 開跑囉！</span>
+      <h1>家裡常要打掃？<br>當會員，<span class="y">次次 95 折</span></h1>
+      <p class="sub">居家清潔、除蟎、高溫清潔通通會員價，花越多回饋越多。六個月滿 15 小時，下一期直接免費續約！</p>
+      <div class="actions">
+        <a class="btn btn-line js-line" data-msg="join" data-event="join_click" href="https://line.me/R/ti/p/@yamen">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8Z"/></svg>
+          我想加入會員</a>
+        <a class="btn btn-ghost" href="#benefits">看看有什麼好康 ↓</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <img class="mascot" src="mascot.png" alt="">
+      <div class="sticker s1"><span class="n">95折</span><small>指定服務</small></div>
+      <div class="sticker s2"><span class="n">$500</span><small>滿額折價券</small></div>
+      <div class="sticker s3"><span class="n">免費</span><small>滿 15 小時續約</small></div>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 40 C 240 80 480 0 720 30 S 1200 70 1440 30 L1440 70 L0 70 Z" fill="#fff"/></svg>
+  </div>
+</section>
+
+<!-- PRICE STRIP -->
+<section class="price-strip">
+  <div class="wrap">
+    <div class="price-card reveal">
+      <div>
+        <div class="price-tag">會員費</div>
+        <div class="price">NT$800 <small>／6 個月</small></div>
+      </div>
+      <div class="perks">
+        <span class="perk"><i>✓</i>指定服務 95 折</span>
+        <span class="perk"><i>✓</i>每滿 $8,000 送 $500 券</span>
+        <span class="perk"><i>✓</i>滿 15 小時下期免費</span>
+        <span class="perk"><i>✓</i>沒有每月消費門檻</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="pill">🎁 會員好康</span>
+      <h2>加入會員，<span class="hl">三種好康</span>一次拿</h2>
+      <p class="lead">從簽約日起算六個月，以下優惠通通適用。</p>
+    </div>
+    <div class="cards">
+      <div class="card c1 reveal">
+        <div class="em"><svg viewBox="0 0 32 32" fill="none" stroke="#32925C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 4H27v10L15 26 6 17Z"/><circle cx="22" cy="9" r="1.8" fill="#32925C"/></svg></div>
+        <div class="big">95<small> 折</small></div>
+        <h3>次次都是會員價</h3>
+        <p>一般居家清潔、除蟎清潔、高溫清潔，每次預約都直接打 95 折。</p>
+      </div>
+      <div class="card c2 reveal">
+        <div class="em"><svg viewBox="0 0 32 32" fill="none" stroke="#D99A1E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="24" height="15" rx="3"/><path d="M12 9v15" stroke-dasharray="2 3"/><path d="M17 15h6M17 19h4"/></svg></div>
+        <div class="big">$500<small> 折價券</small></div>
+        <h3>花越多，回饋越多</h3>
+        <p>累積實付每滿 NT$8,000，馬上送一張 NT$500 折價券，不用等月底。</p>
+      </div>
+      <div class="card c3 reveal">
+        <div class="em"><svg viewBox="0 0 32 32" fill="none" stroke="#3A8FB0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="17" r="10"/><path d="M16 11v6l4 3M12 3h8"/></svg></div>
+        <div class="big">15<small> 小時</small></div>
+        <h3>下一期免費續約</h3>
+        <p>六個月內累積服務滿 15 小時，下一期 NT$800 會員費就不用付。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="alt" id="services">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="pill">🧹 適用服務</span>
+      <h2>哪些服務有會員優惠？</h2>
+      <p class="lead">95 折、滿額回饋和時數累積，只算下面這三項喔。</p>
+    </div>
+    <div class="svc">
+      <div class="svc-box svc-yes reveal">
+        <h3><span class="dot">✓</span>有會員優惠</h3>
+        <div class="chips"><span class="chip">🏠 一般居家清潔</span><span class="chip">🛏️ 除蟎清潔</span><span class="chip">♨️ 高溫清潔</span></div>
+      </div>
+      <div class="svc-box svc-no reveal">
+        <h3><span class="dot">✕</span>不適用</h3>
+        <div class="chips"><span class="chip"><s>大掃除專案</s></span><span class="chip"><s>裝潢細清</s></span></div>
+      </div>
+    </div>
+    <div class="tip reveal"><span class="t">提醒</span><span>大掃除專案和裝潢細清不享 95 折，消費金額與服務時數也不列入會員累積。</span></div>
+  </div>
+</section>
+
+<!-- RULES -->
+<section id="rules">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="pill">📋 規則說明</span>
+      <h2>費用和回饋怎麼算？</h2>
+      <p class="lead">重要規則都寫在這裡，加入前花一分鐘看一下 🙂</p>
+    </div>
+    <div class="rules">
+      <div class="rule reveal">
+        <h3><span class="num">1</span>會員費與期間</h3>
+        <ul>
+          <li>會員費 NT$800，期間六個月，自簽約日起算。</li>
+          <li>沒有每月消費門檻，想什麼時候預約都可以。</li>
+        </ul>
+      </div>
+      <div class="rule reveal">
+        <h3><span class="num">2</span>累積金額怎麼算</h3>
+        <ul>
+          <li>以 95 折後的<b>實際付款金額</b>計算。</li>
+          <li>用折價券折抵的金額不列入累積。</li>
+          <li>累積金額會一直累計，續約後<b>不會歸零</b>。</li>
+          <li>例：原價 $6,000，實付 $5,700，就累積 $5,700。</li>
+        </ul>
+      </div>
+      <div class="rule reveal">
+        <h3><span class="num">3</span>折價券怎麼用</h3>
+        <ul>
+          <li>一達門檻就發放，下一次預約就能用。</li>
+          <li>每次限用一張，單次服務最低需 1 人 3 小時。</li>
+          <li>不可與其他促銷活動併用。</li>
+        </ul>
+      </div>
+      <div class="rule reveal">
+        <h3><span class="num">4</span>折價券期限</h3>
+        <ul>
+          <li>限會員期間內使用。</li>
+          <li>有續約：沒用完的券可以<b>帶到下一期</b>。</li>
+          <li>不續約：會員期滿後，未使用的券就失效。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RENEWAL -->
+<section class="renew" id="renew">
+  <div class="wrap renew-grid">
+    <div class="reveal">
+      <span class="pill">⏰ 續約優惠</span>
+      <h2>六個月滿 15 小時<br><span class="y">下一期免費續約</span></h2>
+      <p>時數以「人數 × 小時」計算，2 位清潔人員服務 3 小時就算 6 小時。時數每一期重新計算，免費的那一期再滿 15 小時，下一期一樣免費！</p>
+    </div>
+    <div class="track reveal" id="track">
+      <h3>以 2 人 × 3 小時為例</h3>
+      <p class="cap">大約來 3 次就達標</p>
+      <div class="bar"><div class="fill" id="fill"></div><div class="goal" title="15 小時"></div></div>
+      <div class="bar-labels"><span>0</span><span>15 小時 🎯</span><span>18</span></div>
+      <div class="visits">
+        <div class="visit" data-i="1"><span class="h">6h</span><small>第 1 次</small></div>
+        <div class="visit" data-i="2"><span class="h">12h</span><small>第 2 次</small></div>
+        <div class="visit goal-hit" data-i="3"><span class="h">18h ✓</span><small>第 3 次</small></div>
+      </div>
+      <div class="done" id="done">🎉 達標！下一期 NT$800 免付</div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calc">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="pill">🧮 試算一下</span>
+      <h2>當會員，<span class="hl">每小時多少錢？</span></h2>
+      <p class="lead">一般居家清潔原價 1 人 1 小時 NT$600。把會員費、95 折和折價券通通算進去，平均下來是這樣：</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal" data-p="1" data-h="3" data-f="weekly"></div>
+      <div class="plan hot reveal" data-p="1" data-h="3" data-f="biweekly" data-badge="推薦"></div>
+      <div class="plan reveal" data-p="2" data-h="3" data-f="monthly"></div>
+    </div>
+    <div class="diy reveal">
+      <div>
+        <h3>自己組組看</h3>
+        <div class="opts">
+          <div class="opt"><span>人數</span><div class="seg" id="seg-p" role="group" aria-label="清潔人數"><button type="button" data-v="1" class="on">1 人</button><button type="button" data-v="2">2 人</button><button type="button" data-v="3">3 人</button></div></div>
+          <div class="opt"><span>時數</span><div class="seg" id="seg-h" role="group" aria-label="每次時數"><button type="button" data-v="3" class="on">3 小時</button><button type="button" data-v="4">4 小時</button><button type="button" data-v="5">5 小時</button><button type="button" data-v="6">6 小時</button></div></div>
+          <div class="opt"><span>頻率</span><div class="seg" id="seg-f" role="group" aria-label="預約頻率"><button type="button" data-v="weekly">每週</button><button type="button" data-v="biweekly" class="on">隔週</button><button type="button" data-v="monthly">每月</button></div></div>
+        </div>
+      </div>
+      <div class="plan" id="diy-plan" aria-live="polite"></div>
+    </div>
+    <p class="calc-fine">試算以一般居家清潔原價每人每小時 NT$600 計算，六個月以每週 26 次、隔週 13 次、每月 6 次估算。第一期已攤入 NT$800 會員費；折價券以期間內實際能用掉的張數計算。「續約後」為第二期的平均單價（滿 15 小時免會員費，累積金額接續計算）。實際金額依每次服務報價為準。</p>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="pill">🤔 適合我嗎？</span>
+      <h2>訂閱制適合誰？</h2>
+      <p class="lead">看你的清潔習慣決定就好，不一定每個人都需要加入。</p>
+    </div>
+    <div class="who">
+      <div class="who-box who-yes reveal">
+        <h3>👍 很適合你，如果…</h3>
+        <ul>
+          <li>家裡平常就有固定清潔需求</li>
+          <li>想定期安排除蟎或高溫清潔</li>
+          <li>六個月內預計會預約兩、三次以上</li>
+        </ul>
+      </div>
+      <div class="who-box who-no reveal">
+        <h3>🙂 可以先不用，如果…</h3>
+        <ul>
+          <li>只是偶爾需要一次性清潔</li>
+          <li>主要需求是大掃除或裝潢細清</li>
+        </ul>
+        <p>這種情況直接預約一般服務就可以囉。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="pill">💬 常見問題</span>
+      <h2>你可能想問</h2>
+      <p class="lead">還有疑問，歡迎直接 LINE 我們。</p>
+    </div>
+    <div class="faq reveal">
+      <details><summary>訂閱制會員多少錢？</summary><div class="a">NT$800，會員期間自簽約日起算六個月。</div></details>
+      <details><summary>一定要每個月消費嗎？</summary><div class="a">不用！沒有每月消費門檻，唯一的條件是：六個月內累積滿 15 小時，下一期就能免費續約。沒達到也沒關係，只是下一期續約要再付 NT$800。</div></details>
+      <details><summary>所有服務都有 95 折嗎？</summary><div class="a">不是喔。適用一般居家清潔、除蟎清潔及高溫清潔；大掃除專案和裝潢細清不適用，也不列入金額與時數累積。</div></details>
+      <details><summary>15 小時怎麼計算？</summary><div class="a">以「人數 × 服務小時」計算。例如 2 位清潔人員服務 3 小時，就計 6 小時。時數每一期重新計算。</div></details>
+      <details><summary>滿 NT$8,000 什麼時候拿到折價券？</summary><div class="a">累積一達到門檻就發放，不用等月底或會員期滿。</div></details>
+      <details><summary>累積金額怎麼算？續約後會歸零嗎？</summary><div class="a">以 95 折後的實際付款金額計算，折價券折抵的金額不列入。例如原價 NT$6,000，會員價實付 NT$5,700，就累積 NT$5,700。累積金額會持續累計，續約後不會歸零。</div></details>
+      <details><summary>折價券有什麼使用限制？</summary><div class="a">下一次預約就能用，每次限用一張，單次服務最低需 1 人 3 小時，不可與其他促銷活動併用。折價券限會員期間內使用；有續約可以帶到下一期，不續約則期滿失效。</div></details>
+      <details><summary>會員期滿一定要續約嗎？</summary><div class="a">不用，期滿可以自己決定要不要續約。六個月內滿 15 小時，下一期免費；沒滿的話，續約費用為 NT$800。</div></details>
+      <details><summary>加入後怎麼預約？</summary><div class="a">跟平常一樣，透過 LINE 官方帳號 @yamen 聯繫客服安排時間就可以。</div></details>
+      <details><summary>看完還是不確定要不要加入？</summary><div class="a">歡迎 LINE 問我們，客服會依你的清潔需求幫你評估。</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap reveal">
+    <img class="mascot-sm" src="mascot.png" alt="" aria-hidden="true">
+    <h2>準備好當會員了嗎？</h2>
+    <p>先了解方案，再依自己的清潔需求決定要不要加入。</p>
+    <div class="actions">
+      <a class="btn btn-line js-line" data-msg="join" data-event="join_click" href="https://line.me/R/ti/p/@yamen">我想加入會員</a>
+      <a class="btn btn-out js-line" data-msg="ask" data-event="line_click" href="https://line.me/R/ti/p/@yamen">我還有問題</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="logo-white.png" alt="MitesTask 野蟎任務">
+    <p>LINE 官方帳號 @yamen ｜ 方案內容以正式會員合約為準</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="info"><b>NT$800／6 個月</b><br>指定服務 95 折・滿 15 小時免費續約</div>
+  <a class="btn btn-line js-line" data-msg="join" data-event="join_click" href="https://line.me/R/ti/p/@yamen">我想加入</a>
+</div>
+
+<script>
+  var LINE_ID = '@yamen';
+  var MSG = {
+    join: '您好，我看過訂閱制會員介紹，想進一步了解加入方式。',
+    ask:  '您好，我看過訂閱制會員介紹，有幾個問題想請教。'
+  };
+
+  // 事件追蹤：已安裝 GA4 或 Meta Pixel 時自動送出
+  function track(name, params){
+    try{ if(window.gtag) gtag('event', name, params||{}); }catch(e){}
+    try{ if(window.fbq) fbq('trackCustom', name, params||{}); }catch(e){}
+  }
+
+  // LINE 按鈕帶入預設訊息
+  document.querySelectorAll('.js-line').forEach(function(a){
+    var text = MSG[a.dataset.msg] || '';
+    a.href = 'https://line.me/R/oaMessage/' + encodeURIComponent(LINE_ID) + '/?' + encodeURIComponent(text);
+    a.target = '_blank'; a.rel = 'noopener';
+    a.addEventListener('click', function(){
+      var box = a.closest('section,header,.sticky');
+      track(a.dataset.event, {position: box ? (box.id || box.className) : ''});
+    });
+  });
+
+  // FAQ 開啟追蹤
+  document.querySelectorAll('.faq details').forEach(function(d){
+    d.addEventListener('toggle', function(){ if(d.open) track('faq_open', {question: d.querySelector('summary').textContent}); });
+  });
+
+  // 捲動：header 陰影、手機底部按鈕
+  var header = document.getElementById('top'), sticky = document.getElementById('sticky');
+  function onScroll(){
+    var y = window.scrollY;
+    header.classList.toggle('scrolled', y > 10);
+    var nearEnd = (window.innerHeight + y) > (document.body.scrollHeight - 260);
+    sticky.classList.toggle('show', y > 480 && !nearEnd);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // 進場動畫 + 時數進度條
+  function playTrack(){
+    var fill = document.getElementById('fill'), visits = document.querySelectorAll('.visit');
+    [1,2,3].forEach(function(i){
+      setTimeout(function(){
+        fill.style.width = (i*6/18*100) + '%';
+        visits[i-1].classList.add('on');
+        if(i===3) setTimeout(function(){ document.getElementById('done').classList.add('on'); }, 500);
+      }, 500 + (i-1)*900);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting) return;
+        e.target.classList.add('in');
+        if(e.target.id === 'track') playTrack();
+        io.unobserve(e.target);
+      });
+    }, {threshold:.15});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    playTrack();
+  }
+
+  // 試算：平均每小時單價
+  var RATE = 600, FEE = 800, DISC = 0.95, STEP = 8000, COUPON = 500, GOAL = 15;
+  var FREQ = {weekly:{n:26,t:'每週'}, biweekly:{n:13,t:'隔週'}, monthly:{n:6,t:'每月'}};
+  function simulate(p, h, f){
+    var visits = FREQ[f].n, acc = 0, coupons = 0, res = [], prevHours = 0;
+    for(var term = 0; term < 2; term++){
+      var pay = (term === 0 || prevHours < GOAL) ? FEE : 0;
+      for(var v = 0; v < visits; v++){
+        var price = p * h * RATE * DISC;
+        if(coupons > 0){ price -= COUPON; coupons--; }
+        pay += price; acc += price;
+        while(acc >= STEP){ acc -= STEP; coupons++; }
+      }
+      prevHours = p * h * visits;
+      res.push({pay: pay, hours: prevHours, perHour: pay / prevHours});
+    }
+    return res;
+  }
+  function n0(x){ return Math.round(x).toLocaleString('zh-TW'); }
+  function render(el, p, h, f, badge){
+    var r = simulate(p, h, f), first = r[0], next = r[1];
+    var save = RATE - first.perHour, pct = save / RATE * 100;
+    var times = FREQ[f].n;
+    el.innerHTML =
+      (badge ? '<span class="badge">' + badge + '</span>' : '') +
+      '<h3>' + p + ' 人 × ' + h + ' 小時 <span class="fq">' + FREQ[f].t + '</span></h3>' +
+      '<div class="meta">六個月約 ' + times + ' 次・共 ' + first.hours + ' 小時' + (first.hours >= GOAL ? '・可免費續約 ✓' : '') + '</div>' +
+      '<div class="rate"><span class="now">$' + n0(first.perHour) + '</span><span class="unit">／小時</span></div>' +
+      '<div class="was">原價 <s>$600／小時</s></div>' +
+      '<span class="save">每小時省 $' + n0(save) + '（約 ' + (Math.round(pct * 10) / 10) + '%）</span>' +
+      '<div class="next"><span>續約後每小時</span><b>$' + n0(next.perHour) + '</b></div>';
+  }
+  document.querySelectorAll('.plans .plan').forEach(function(el){
+    render(el, +el.dataset.p, +el.dataset.h, el.dataset.f, el.dataset.badge);
+  });
+  var pick = {p:1, h:3, f:'biweekly'};
+  function renderDiy(){ render(document.getElementById('diy-plan'), pick.p, pick.h, pick.f); }
+  [['seg-p','p',true],['seg-h','h',true],['seg-f','f',false]].forEach(function(cfg){
+    var seg = document.getElementById(cfg[0]);
+    seg.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click', function(){
+        seg.querySelectorAll('button').forEach(function(x){ x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
+        pick[cfg[1]] = cfg[2] ? +b.dataset.v : b.dataset.v;
+        renderDiy();
+      });
+      b.setAttribute('aria-pressed', b.classList.contains('on'));
+    });
+  });
+  renderDiy();
+</script>
+</body>
+</html>
